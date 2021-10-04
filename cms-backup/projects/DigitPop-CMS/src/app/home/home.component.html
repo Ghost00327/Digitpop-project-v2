@@ -1,0 +1,79 @@
+<div class="bgimg container">
+  <iframe
+    class="videocontainer"
+    src="https://www.youtube.com/embed/WHH3FD1ynaY"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+  ></iframe>
+
+  <div class="plancontainer">
+    <div class="planpanel">
+      <span class="planpanelheader titleFont">Plus</span>
+      <h4 class="planpanelbandwidth">
+        10 GB of streaming. Around 1000 views of a 1 minute video
+      </h4>
+      <h1 class="planpanelprice priceFont">US$19/mo</h1>
+      <!-- <button (click)="onRegister()">CLICK ME</button> -->
+      <a
+        mat-raised-button
+        class="planpanelbutton"
+        color="primary"
+        href="javascript:void(0)"
+        data-billsby-type="checkout"
+        ><span class="trialText">Start free trial</span></a
+      >
+    </div>
+
+    <div class="planpanel2">
+      <h1 class="planpanelheader titleFont">Pro</h1>
+      <h4 class="planpanelbandwidth">
+        25 GB of streaming. Around 2500 views of a 1 minute video
+      </h4>
+      <h1 class="planpanelprice priceFont">US$49/mo</h1>
+      <a
+        mat-raised-button
+        class="planpanelbutton"
+        color="primary"
+        href="javascript:void(0)"
+        data-billsby-type="checkout"
+        >Start free trial</a
+      >
+    </div>
+
+    <div class="planpanel3">
+      <h1 class="planpanelheader titleFont">Business</h1>
+      <h4 class="planpanelbandwidth">
+        50 GB of streaming. Around 5000 views of a 1 minute video
+      </h4>
+      <h1 class="planpanelprice priceFont">US$99/mo</h1>
+      <a
+        mat-raised-button
+        class="planpanelbutton"
+        color="primary"
+        href="javascript:void(0)"
+        data-billsby-type="checkout"
+        >Start free trial</a
+      >
+    </div>
+  </div>
+
+  <div class="exampleShoppableTitle">
+    <span class="exampleVideoText"
+      >Example Shoppable Video with model Christina Bustos</span
+    >
+  </div>
+
+  <div #embeddedFrame class="exampleShoppableVideo">
+    <!-- <img class="exampleShoppableVideo" (click)="preview()" src="http://res.cloudinary.com/boggssystems/image/upload/v1521154390/rfq8aidi6rsbu0vc67my.png"> -->
+
+    <iframe
+      #embeddedIFrame
+      scrolling="no"
+      class="exampleShoppableVideoiFrame"
+      [src]="iFrameSrc | safe"
+      allowfullscreen
+      allow-top-navigation
+    ></iframe>
+  </div>
+</div>
